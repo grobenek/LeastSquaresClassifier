@@ -2,28 +2,24 @@ import os
 
 import numpy as np
 from PIL import Image
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from sklearn.preprocessing import LabelBinarizer
-from sklearn.metrics import confusion_matrix
 
 
 def load_data_from_folders(base_path):
     images = []
     labels = []
 
-    # Loop over the folders
-    for label in sorted(os.listdir(base_path)):
-        # Ensure that the label is a directory
+    for label in os.listdir(base_path):
         folder_path = os.path.join(base_path, label)
         if os.path.isdir(folder_path):
-            # Loop over the images in the folder
             for image_name in os.listdir(folder_path):
                 image_path = os.path.join(folder_path, image_name)
                 image = Image.open(image_path)
                 images.append(np.array(image).astype('float32'))
-                labels.append(int(label))  # The folder name represents the label
+                labels.append(int(label))
 
-    # Reshape images and convert labels to a numpy array
-    images = np.array(images).reshape(-1, 28 * 28)  # Assuming all images are 28x28
+    images = np.array(images).reshape(-1, 28 * 28)
     labels = np.array(labels)
     return images, labels
 
@@ -47,12 +43,11 @@ Y = train_labels_one_hot
 W = np.linalg.pinv(X.T @ X) @ X.T @ Y
 
 
-# Function to predict labels
 def predict(images, W):
     return np.argmax(images @ W, axis=1)
 
 
-# Evaluate the model
+# evaluation
 test_predictions = predict(test_images, W)
 
 confusion_matrix = confusion_matrix(test_labels, test_predictions)
@@ -66,3 +61,19 @@ def print_confusion_matrix(p_confusion_matrix):
 
 
 print_confusion_matrix(confusion_matrix)
+
+# accuracy
+accuracy = accuracy_score(test_labels, test_predictions)
+print(f"Accuracy: {accuracy}")
+
+# precision
+precision = precision_score(test_labels, test_predictions, average='weighted')
+print(f"Precision: {precision}")
+
+# recall
+recall = recall_score(test_labels, test_predictions, average='weighted')
+print(f"Recall: {recall}")
+
+# F1 score
+f1 = f1_score(test_labels, test_predictions, average='weighted')
+print(f"F1 Score: {f1}")

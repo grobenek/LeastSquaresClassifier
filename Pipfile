@@ -7,6 +7,8 @@ name = "pypi"
 matplotlib = "*"
 mnist = "*"
 tensorflow = "*"
+seaborn = "*"
+mpld3 = "*"
 
 [dev-packages]
 
