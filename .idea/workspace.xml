@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="639b9b15-78fc-421d-a5f5-d4c43b439a95" name="Changes" comment="working model with confusion matrix implemented">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="639b9b15-78fc-421d-a5f5-d4c43b439a95" name="Changes" comment="Finish" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +87,8 @@
       <workItem from="1704199562714" duration="44000" />
       <workItem from="1704199615825" duration="18000" />
       <workItem from="1704199640745" duration="7007000" />
-      <workItem from="1704280371898" duration="4348000" />
+      <workItem from="1704280371898" duration="4701000" />
+      <workItem from="1704382843793" duration="8450000" />
     </task>
     <task id="LOCAL-00001" summary="working model with confusion matrix implemented">
       <option name="closed" value="true" />
@@ -100,7 +98,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704209324940</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="evaluation of model done">
+      <option name="closed" value="true" />
+      <created>1704285746824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704285746824</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finish">
+      <option name="closed" value="true" />
+      <created>1704396174926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704396174926</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finish">
+      <option name="closed" value="true" />
+      <created>1704396243619</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704396243619</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,9 +141,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working model with confusion matrix implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="working model with confusion matrix implemented" />
+    <MESSAGE value="evaluation of model done" />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LeastSquaresClassifier$main.coverage" NAME="main Coverage Results" MODIFIED="1704285338340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeastSquaresClassifier$main.coverage" NAME="main Coverage Results" MODIFIED="1704396082283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
